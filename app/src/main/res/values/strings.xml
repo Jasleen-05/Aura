@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Aura</string>
+    <string name="preferences_file_name">Preferences</string>
+    <string name="underline"><u>Register Yourself</u></string>
+    <string name="dashboard">Dashboard</string>
+    <string name="emergency_features">Emergency Features</string>
+    <string name="live_safety_monitoring"><![CDATA[Live Safety & Monitoring]]></string>
+    <string name="ai_smart_protection"><![CDATA[AI & Smart Protection]]></string>
+    <string name="legal_assistance">Legal Assistance</string>
+    <string name="community_engagement"><![CDATA[Community & Engagement]]></string>
+    <string name="settings_customization"><![CDATA[Settings & Customization]]></string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard_fragment">Dashboard Fragment</string>
+    <string name="emergency_features_fragment">Emergency Features Fragment</string>
+    <string name="live_safety_monitoring_fragment"><![CDATA[Live Safety & Monitoring Fragment]]></string>
+    <string name="ai_smart_protection_fragment"><![CDATA[AI & Smart Protection Fragment]]></string>
+    <string name="legal_assistance_fragment">Legal Assistance Fragment</string>
+    <string name="community_engagement_fragment"><![CDATA[Community & Engagement Fragment]]></string>
+    <string name="settings_customization_fragment"><![CDATA[Settings & Customization Fragment]]></string>
+    <string name="help_support_fragment"><![CDATA[Help & Support Fragment]]></string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"><item
+    android:id="@+id/dashboard"
+    android:title="@string/dashboard"
+    android:icon="@drawable/ic_dashboard"/>
+    <item
+        android:id="@+id/emergency"
+        android:title="@string/emergency_features"
+        android:icon="@drawable/ic_emergency"/>
+    <item
+        android:id="@+id/safety"
+        android:title="@string/live_safety_monitoring"
+        android:icon="@drawable/ic_safety"/>
+    <item
+        android:id="@+id/protection"
+        android:title="@string/ai_smart_protection"
+        android:icon="@drawable/ic_protection"/>
+    <item
+        android:id="@+id/legal"
+        android:title="@string/legal_assistance"
+        android:icon="@drawable/ic_legal"/>
+    <item
+        android:id="@+id/community"
+        android:title="@string/community_engagement"
+        android:icon="@drawable/ic_community"/>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings_customization"
+        android:icon="@drawable/ic_settings"/>
+    <item
+        android:id="@+id/help"
+        android:title="@string/help_support"
+        android:icon="@drawable/ic_help"/>
+    </group>
+</menu>
