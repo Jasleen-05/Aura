@@ -13,7 +13,7 @@ import com.example.aura.R
 import com.example.aura.adapter.DashboardRecyclerAdapter
 import com.example.aura.model.Profile
 
-class DashboardFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     lateinit var recyclerDashboard: RecyclerView
     lateinit var layoutManager: RecyclerView.LayoutManager
@@ -28,7 +28,7 @@ class DashboardFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view=inflater.inflate(R.layout.fragment_dashboard, container, false)
+        val view=inflater.inflate(R.layout.fragment_profile, container, false)
         recyclerDashboard=view.findViewById(R.id.recyclerDashboard)
         layoutManager= LinearLayoutManager(activity)
         recyclerAdapter=DashboardRecyclerAdapter(activity as Context, profileList)

@@ -23,4 +23,5 @@
     <string name="community_engagement_fragment"><![CDATA[Community & Engagement Fragment]]></string>
     <string name="settings_customization_fragment"><![CDATA[Settings & Customization Fragment]]></string>
     <string name="help_support_fragment"><![CDATA[Help & Support Fragment]]></string>
+    <string name="profile">Profile</string>
 </resources>

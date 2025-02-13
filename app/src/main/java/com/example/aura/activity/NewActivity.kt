@@ -11,12 +11,12 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.aura.fragment.CommunityFragment
-import com.example.aura.fragment.DashboardFragment
-import com.example.aura.fragment.EmergencyFragment
+import com.example.aura.fragment.ProfileFragment
 import com.example.aura.fragment.HelpFragment
 import com.example.aura.fragment.LegalFragment
 import com.example.aura.fragment.ProtectionFragment
 import com.example.aura.R
+import com.example.aura.fragment.HomeFragment
 import com.example.aura.fragment.SafetyFragment
 import com.example.aura.fragment.SettingsFragment
 import com.google.android.material.navigation.NavigationView
@@ -67,9 +67,9 @@ class NewActivity : AppCompatActivity() {
                 }
                 R.id.emergency ->{
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout, EmergencyFragment())
+                        .replace(R.id.frameLayout, ProfileFragment())
                         .commit()
-                    supportActionBar?.title="Emergency Features"
+                    supportActionBar?.title="Profile"
                     drawerLayout.closeDrawers()
                 }
                 R.id.safety ->{
@@ -135,19 +135,19 @@ class NewActivity : AppCompatActivity() {
     }
 
     fun openDashboard(){
-        val fragment= DashboardFragment()
+        val fragment= HomeFragment()
         val mFragmentManager=supportFragmentManager
         val mFragmentTransaction=mFragmentManager.beginTransaction()
         mFragmentTransaction.replace(R.id.frameLayout,fragment)
         mFragmentTransaction.commit()
-        supportActionBar?.title="Dashboard"
+        supportActionBar?.title="Home"
         navigationView.setCheckedItem(R.id.dashboard)
     }
 
     override fun onBackPressed() {
         val frag=supportFragmentManager.findFragmentById(R.id.frameLayout)
         when(frag){
-            !is DashboardFragment ->openDashboard()
+            !is HomeFragment ->openDashboard()
             else->super.onBackPressed()
         }
     }

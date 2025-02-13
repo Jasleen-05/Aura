@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.DashboardFragment"
-    android:background="@drawable/gradient">
+    tools:context=".fragment.ProfileFragment"
+    android:background="#FFF8E1">
     <ImageView
         android:src="@drawable/name"
         android:layout_margin="15dp"
