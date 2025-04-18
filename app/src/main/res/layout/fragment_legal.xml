@@ -5,14 +5,103 @@
     android:layout_height="match_parent"
     tools:context=".fragment.LegalFragment">
 
-    <TextView
-        android:id="@+id/txtDashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/legal_assistance_fragment"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:textColor="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_one">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
+            <TextView
+                android:id="@+id/txtSafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Women's Safety"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageButton
+                android:id="@+id/btnChatbot"
+                android:layout_below="@+id/txtSafe"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="AI-Powered Chatbot"
+                android:textColor="@android:color/white"
+                android:src="@drawable/bot"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/btnEmergencyCall"
+                android:layout_below="@+id/btnTracking"
+                android:layout_toRightOf="@id/btnDirectHelpline"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Legal Community Hub"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/legal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageButton
+                android:id="@+id/btnTracking"
+                android:layout_below="@+id/btnChatbot"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Emergency Tracking"
+                android:textColor="@android:color/white"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/case_one"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:layout_toRightOf="@+id/btnTracking"
+                android:layout_below="@+id/btnChatbot"
+                android:id="@+id/btnKnowRights"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Direct helpline"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/rights"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:layout_below="@+id/btnTracking"
+                android:id="@+id/btnDirectHelpline"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Direct helpline"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/direct"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:layout_below="@+id/txtSafe"
+                android:layout_toRightOf="@+id/txtSafe"
+                android:id="@+id/btnfire"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Direct helpline"
+                android:textColor="@android:color/white"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/fir"/>
+
+        </RelativeLayout>
+    </ScrollView>
 </FrameLayout>

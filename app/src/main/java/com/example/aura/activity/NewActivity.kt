@@ -79,18 +79,18 @@ class NewActivity : AppCompatActivity() {
                     supportActionBar?.title="Live Safety & Monitoring"
                     drawerLayout.closeDrawers()
                 }
-                R.id.protection ->{
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout, ProtectionFragment())
-                        .commit()
-                    supportActionBar?.title="AI & Smart Protection"
-                    drawerLayout.closeDrawers()
-                }
                 R.id.legal ->{
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frameLayout, LegalFragment())
                         .commit()
                     supportActionBar?.title="Legal Assistance"
+                    drawerLayout.closeDrawers()
+                }
+                R.id.protection ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout, ProtectionFragment())
+                        .commit()
+                    supportActionBar?.title="AI & Smart Protection"
                     drawerLayout.closeDrawers()
                 }
                 R.id.community ->{

@@ -6,7 +6,7 @@
     tools:context=".fragment.ProfileFragment"
     android:background="#FFF8E1">
     <ImageView
-        android:src="@drawable/name"
+        android:src="@drawable/prof"
         android:layout_margin="15dp"
         android:id="@+id/imgFace"
         android:layout_width="200dp"

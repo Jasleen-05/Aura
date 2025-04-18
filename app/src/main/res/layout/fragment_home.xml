@@ -24,7 +24,7 @@
             android:id="@+id/profileImage"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/name"
+            android:src="@drawable/prof"
             android:scaleType="centerCrop"
             android:layout_marginLeft="300dp"/>
 

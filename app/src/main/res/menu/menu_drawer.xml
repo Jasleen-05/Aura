@@ -13,13 +13,13 @@
         android:title="@string/live_safety_monitoring"
         android:icon="@drawable/ic_safety"/>
     <item
-        android:id="@+id/protection"
-        android:title="@string/ai_smart_protection"
-        android:icon="@drawable/ic_protection"/>
-    <item
         android:id="@+id/legal"
         android:title="@string/legal_assistance"
         android:icon="@drawable/ic_legal"/>
+        <item
+            android:id="@+id/protection"
+            android:title="@string/ai_smart_protection"
+            android:icon="@drawable/ic_protection"/>
     <item
         android:id="@+id/community"
         android:title="@string/community_engagement"
