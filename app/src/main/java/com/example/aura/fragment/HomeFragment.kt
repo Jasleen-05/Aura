@@ -10,7 +10,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
 import com.example.aura.R
-
+import android.media.MediaPlayer
 
 class HomeFragment : Fragment() {
 
@@ -21,6 +21,8 @@ class HomeFragment : Fragment() {
     lateinit var btnNearby: ImageButton
     lateinit var btnBodyGuard: ImageButton
     lateinit var alertButton: Button
+
+    private var mediaPlayer: MediaPlayer? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,6 +48,7 @@ class HomeFragment : Fragment() {
         val shoutOutButton: ImageButton = view.findViewById(R.id.btnShoutOut)
         shoutOutButton.setOnClickListener {
             Toast.makeText(requireContext(), "ShoutOut sent! Help is on the way", Toast.LENGTH_SHORT).show()
+            playEmergencySound()
         }
         val nearbyButton: ImageButton = view.findViewById(R.id.btnNearby)
         nearbyButton.setOnClickListener {
@@ -56,5 +59,16 @@ class HomeFragment : Fragment() {
             Toast.makeText(requireContext(), "Sent location to Emergency Contacts", Toast.LENGTH_SHORT).show()
         }
         return view
+    }
+    private fun playEmergencySound() {
+        mediaPlayer?.release()
+        mediaPlayer = MediaPlayer.create(requireContext(), R.raw.emergency)
+        mediaPlayer?.start()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        mediaPlayer?.release()
+        mediaPlayer = null
     }
 }
