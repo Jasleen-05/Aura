@@ -1,4 +1,4 @@
-**AURA - AI-Driven Women's Safety Ecosystem**
+## **AURA - AI-Driven Women's Safety Ecosystem**
 
 AURA is an AI-powered safety ecosystem designed to provide comprehensive protection and proactive safety measures for women. It leverages advanced analytics, real-time threat detection, and AI-driven functionalities to enhance public safety, prevent crimes, and provide quick emergency assistance.
 
