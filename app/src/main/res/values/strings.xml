@@ -24,4 +24,6 @@
     <string name="settings_customization_fragment"><![CDATA[Settings & Customization Fragment]]></string>
     <string name="help_support_fragment"><![CDATA[Help & Support Fragment]]></string>
     <string name="profile">Profile</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="danger_prediction">Danger Prediction</string>
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/botMessageLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/botImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/bot"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Bot Avatar" />
+
+    <TextView
+        android:id="@+id/botMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textSize="16sp" />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/userMessageLayout"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentEnd="true"
+android:orientation="horizontal"
+android:visibility="gone">
+
+<TextView
+    android:id="@+id/userMessageTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:padding="10dp"
+    android:textSize="16sp"
+    android:layout_marginEnd="8dp" />
+
+<ImageView
+    android:id="@+id/userImageView"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/prof"
+    android:contentDescription="User Avatar"/>
+</LinearLayout>
+</RelativeLayout>

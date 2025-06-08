@@ -16,6 +16,7 @@ import com.example.aura.fragment.HelpFragment
 import com.example.aura.fragment.LegalFragment
 import com.example.aura.fragment.ProtectionFragment
 import com.example.aura.R
+import com.example.aura.fragment.DangerPredictionFragment
 import com.example.aura.fragment.HomeFragment
 import com.example.aura.fragment.SafetyFragment
 import com.example.aura.fragment.SettingsFragment
@@ -84,6 +85,13 @@ class NewActivity : AppCompatActivity() {
                         .replace(R.id.frameLayout, LegalFragment())
                         .commit()
                     supportActionBar?.title="Legal Assistance"
+                    drawerLayout.closeDrawers()
+                }
+                R.id.danger->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout, DangerPredictionFragment())
+                        .commit()
+                    supportActionBar?.title="Danger Prediction"
                     drawerLayout.closeDrawers()
                 }
                 R.id.protection ->{

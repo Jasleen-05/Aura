@@ -17,6 +17,10 @@
         android:title="@string/legal_assistance"
         android:icon="@drawable/ic_legal"/>
         <item
+            android:id="@+id/danger"
+            android:title="@string/danger_prediction"
+            android:icon="@drawable/ic_prediction"/>
+        <item
             android:id="@+id/protection"
             android:title="@string/ai_smart_protection"
             android:icon="@drawable/ic_protection"/>
