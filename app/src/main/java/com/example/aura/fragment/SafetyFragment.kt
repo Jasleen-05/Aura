@@ -30,11 +30,11 @@ class SafetyFragment : Fragment() {
         }
 
         btnSafeSOS.setOnClickListener {
-            //Toast.makeText(requireContext(), "Safe SOS Activated", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Safe SOS Activated", Toast.LENGTH_SHORT).show()
         }
 
         btnInstantSOS.setOnClickListener {
-            //Toast.makeText(requireContext(), "Instant SOS Sent!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Instant SOS Sent!", Toast.LENGTH_SHORT).show()
         }
         return view
     }
